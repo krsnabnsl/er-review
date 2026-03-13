@@ -1,0 +1,6 @@
+
+command: ["sh", "-c", "streamlit run app/app.py --server.port $DATABRICKS_APP_PORT --server.address 0.0.0.0 --server.headless true"]
+
+env:
+  - name: ER_TABLE
+    value: "roboticscatalog.er_review.er_readings"
